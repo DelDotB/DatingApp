@@ -3,7 +3,6 @@ import { Photo } from 'src/app/_models/Photo';
 import { FileUploader } from 'ng2-file-upload';
 import { environment } from 'src/environments/environment';
 import { AuthService } from 'src/app/_services/auth.service';
-import { stat } from 'fs';
 
 @Component({
 	selector: 'app-photo-editor',
