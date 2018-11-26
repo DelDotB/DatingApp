@@ -21,6 +21,7 @@ import { UserService } from './_services/user.service';
 import { MemberCardComponent } from './members/member-card/member-card.component';
 import { JwtModule } from '@auth0/angular-jwt';
 import { NgxGalleryModule } from 'ngx-gallery';
+import { FileUploadModule } from 'ng2-file-upload';
 
 import { MemberDetailComponent } from './members/member-detail/member-detail.component';
 import { MemberDetailResolver } from './_resolvers/member-detail.resolver';
@@ -56,6 +57,7 @@ export function tokenGetter() {
 		TabsModule.forRoot(),
 		RouterModule.forRoot(appRoutes),
 		NgxGalleryModule,
+		FileUploadModule,
 		JwtModule.forRoot({
 			config: {
 				tokenGetter: tokenGetter,
